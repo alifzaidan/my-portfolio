@@ -10,3 +10,11 @@
 section {
     scroll-margin-top: 80px;
 }
+
+.gallery-im {
+    width: 100%;
+}
+
+#gallery .row > * {
+    padding: 0;
+}
