@@ -51,7 +51,7 @@
         <section class="jumbotron text-center">
             <img src="img/alif.jpg" alt="Muchammad Alif Zaidan" width="200" class="rounded-circle img-thumbnail" />
             <h1 class="display-4">Muchammad Alif Zaidan</h1>
-            <p class="lead"></p>
+            <p class="lead">.</p>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
                     fill="#ffff"
@@ -132,11 +132,54 @@
                     </div>
                 </div>
             </div>
+
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffffff" fill-opacity="1" d="M0,32L48,64C96,96,192,160,288,176C384,192,480,160,576,128C672,96,768,64,864,74.7C960,85,1056,139,1152,144C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
             </svg>
         </section>
         <!-- Akhir Projects -->
+
+        <!-- Avatar -->
+        <section id="avatar">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col" data-aos="fade-down" data-aos-duration="1000">
+                        <h2>Avatarz</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="avatar-box" data-aos="zoom-in-up" data-aos-duration="600">
+                            <h4 class="avatar-name">Jacob Blake</h4>
+                            <img src="img/avatar/1.png" alt="Jacob Blade" class="avatar-img" />
+                            <a href="" class="btn btn-light avatar-detail-button">Show Detail</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="avatar-box" data-aos="zoom-in-up" data-aos-duration="600">
+                            <h4 class="avatar-name">Sheik</h4>
+                            <img src="img/avatar/2.png" alt="Sheik" class="avatar-img" />
+                            <a href="" class="btn btn-light avatar-detail-button">Show Detail</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="avatar-box" data-aos="zoom-in-up" data-aos-duration="600">
+                            <h4 class="avatar-name">Steve Jobs</h4>
+                            <img src="img/avatar/3.png" alt="Steve Jobs" class="avatar-img" />
+                            <a href="" class="btn btn-light avatar-detail-button">Show Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    fill="#e2edff"
+                    fill-opacity="1"
+                    d="M0,224L48,192C96,160,192,96,288,112C384,128,480,224,576,250.7C672,277,768,235,864,192C960,149,1056,107,1152,106.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+            </svg>
+        </section>
+        <!-- Akhir Avatar -->
 
         <!-- Gallery -->
         <section id="gallery">
@@ -199,6 +242,9 @@
                     </div>
                 </div>
             </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,256L60,266.7C120,277,240,299,360,277.3C480,256,600,192,720,186.7C840,181,960,235,1080,245.3C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg>
         </section>
         <!-- Akhir Gallery -->
 
@@ -238,6 +284,7 @@
                     </div>
                 </div>
             </div>
+
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
                     fill="#0D6EFD"
@@ -306,6 +353,15 @@
                         console.log('Success!', response);
                     })
                     .catch((error) => console.error('Error!', error.message));
+            });
+        </script>
+
+        <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelectorAll('.avatar-box'), {
+                max: 25,
+                speed: 400,
+                glare: true,
             });
         </script>
     </body>
