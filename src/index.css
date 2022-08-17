@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Raleway', sans-serif;
+    @apply bg-light-bg font-medium transition duration-300 selection:bg-light-primary selection:text-light-bg dark:bg-dark-bg;
+  }
+
+  header,
+  main,
+  section,
+  footer {
+    @apply transition duration-300;
+  }
+}
+
+.bg-text {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 29.42vmin;
+  @apply fixed -left-16 -bottom-4 -z-20 select-none whitespace-pre -tracking-[0.3rem] text-[#f9f7f6]  opacity-100 transition-all duration-700 dark:text-[#080f18];
+}
+
+.text-h {
+  writing-mode: unset;
+}
+
+.text-v {
+  writing-mode: vertical-rl;
+}
+
+.wrapper {
+  @apply mx-6 mt-10 sm:mx-24 md:mx-32 md:mt-16 lg:mx-56 lg:mt-24;
+}
+
+.title {
+  @apply py-6 text-5xl font-extrabold leading-tight text-black dark:text-focus md:text-6xl;
+}
+
+.paragraph {
+  @apply text-sm leading-8 tracking-wider text-light-primary dark:text-dark-primary md:text-base md:leading-9;
+}
+
+.next-content {
+  @apply border-b-[1px] border-light-secondary text-sm text-light-primary hover:border-black hover:text-black dark:border-dark-secondary dark:text-dark-primary dark:hover:border-dark-primary md:text-base;
+}
+
+.next-arrow {
+  @apply -z-10 animate-arrow text-2xl text-light-primary dark:text-dark-primary;
+}
+
+.nav-link {
+  @apply pb-3 text-2xl text-light-primary hover:border-b-[1px] hover:border-black hover:text-black dark:text-dark-primary dark:hover:border-dark-primary dark:hover:text-focus md:text-base;
+}
+
+.active {
+  @apply border-b-[1px] border-black text-black dark:border-dark-primary dark:text-focus md:border-transparent md:text-light-primary dark:md:border-transparent dark:md:text-dark-primary;
+}
+
+.footer-link {
+  @apply p-2 text-light-primary hover:text-black dark:text-dark-primary dark:hover:text-focus;
+}
+
+.home-link {
+  @apply rounded bg-light-secondary px-3 py-2 leading-none text-black transition duration-300 ease-in-out hover:bg-cyan-600 hover:text-light-bg dark:bg-dark-secondary dark:text-light-bg dark:hover:bg-cyan-600;
+}
+
+.logo-tech {
+  @apply text-black transition duration-300 hover:scale-125 dark:text-dark-primary;
+}
+
+.card {
+  @apply mx-auto h-60 w-full rounded-lg bg-cover bg-center bg-no-repeat md:h-72 lg:h-80;
+}
+
+.card-content {
+  @apply flex h-full w-full flex-col items-center justify-center gap-2 rounded-lg backdrop-blur-md transition delay-150 duration-300 ease-in-out;
+}
+
+.card-title {
+  @apply mx-8 select-none text-center text-2xl font-extrabold text-black md:text-3xl;
+}
+
+.card-description {
+  @apply mx-8 select-none text-center text-sm tracking-wider text-black md:text-base;
+}
+
+.card-button {
+  @apply m-2 rounded-lg bg-light-secondary px-3 py-2 text-center text-sm font-bold text-black shadow transition duration-300 ease-in-out hover:bg-cyan-600 hover:text-light-bg dark:bg-dark-secondary dark:text-light-bg dark:hover:bg-cyan-600 md:text-base;
+}
+
+.input-form {
+  @apply w-full rounded border border-light-primary bg-transparent p-4 text-sm text-black focus:outline-none focus:ring-1 focus:ring-black dark:text-dark-primary dark:focus:ring-focus md:w-2/3 md:text-base;
+}
+
+.button-form {
+  @apply w-44 rounded border border-black bg-black p-4 text-light-bg transition hover:-translate-y-1 focus:-translate-y-1 dark:bg-dark-primary dark:text-dark-bg;
+}
