@@ -10,7 +10,7 @@ const Footer = () => {
         <a href="https:///instagram.com/zaidanaliff_/" target="_blank" rel="noreferrer" className="footer-link">
           <FaInstagram />
         </a>
-        <a href="https://www.linkedin.com/in/muchammad-alif-zaidan/" target="_blank" rel="noreferrer" className="footer-link">
+        <a href="https://www.linkedin.com/in/alifzaidan/" target="_blank" rel="noreferrer" className="footer-link">
           <FaLinkedinIn />
         </a>
         <a href="https://github.com/alifzaidan/" target="_blank" rel="noreferrer" className="footer-link">
