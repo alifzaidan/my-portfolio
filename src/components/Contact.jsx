@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import { BsArrowRight } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import NextLink from './NextLink';
 
 const Contact = () => {
   useEffect(() => {
@@ -26,10 +25,7 @@ const Contact = () => {
           <button className="button-form">Send Message</button>
         </form>
         <div className="mb-24 md:mb-0">
-          <Link to="/" className="flex w-fit items-center gap-8">
-            <p className="next-content">Go Back Home</p>
-            <BsArrowRight className="next-arrow" />
-          </Link>
+          <NextLink link="/" description="Go Back Home" />
         </div>
       </div>
       <div>

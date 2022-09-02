@@ -1,5 +1,5 @@
-import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import NextLink from './NextLink';
 
 const Resume = () => {
   return (
@@ -24,10 +24,7 @@ const Resume = () => {
           </p>
         </div>
         <div className="mb-24 md:mb-0">
-          <Link to="/contact" className="flex w-fit items-center gap-8">
-            <p className="next-content">Are you convinced to contact me now ?</p>
-            <BsArrowRight className="next-arrow" />
-          </Link>
+          <NextLink link="/contact" description="Are you convinced to contact me now ?" />
         </div>
       </div>
       <div>

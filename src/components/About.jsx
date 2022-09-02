@@ -1,8 +1,7 @@
 import { useEffect } from 'react';
-import { BsArrowRight } from 'react-icons/bs';
 import { SiTailwindcss } from 'react-icons/si';
 import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact, FaFigma } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import NextLink from './NextLink';
 
 const About = () => {
   useEffect(() => {
@@ -30,10 +29,7 @@ const About = () => {
           </ul>
         </div>
         <div className="mb-24 md:mb-0">
-          <Link to="/projects" className="flex w-fit items-center gap-8">
-            <p className="next-content">Lets Continue To Projects</p>
-            <BsArrowRight className="next-arrow" />
-          </Link>
+          <NextLink link="/projects" description="Lets Continue To Projects" />
         </div>
       </div>
       <div>

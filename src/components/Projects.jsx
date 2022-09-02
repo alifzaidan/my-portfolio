@@ -1,11 +1,10 @@
-import { BsArrowRight } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
 import BookshelfApp from '../assets/projects/BookshelfApp.png';
 import TourGuide from '../assets/projects/TourGuide.png';
 import ConverseStore from '../assets/projects/ConverseStore.png';
 import WonderfulIndonesia from '../assets/projects/WonderfulIndonesia.png';
 import LandingPage from '../assets/projects/LandingPage.png';
 import { useEffect } from 'react';
+import NextLink from './NextLink';
 
 const Projects = () => {
   document.addEventListener('click', (e) => {
@@ -98,10 +97,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="mb-24 md:mb-0">
-          <Link to="/contact" className="flex w-fit items-center gap-8">
-            <p className="next-content">Are you convinced to contact me now ?</p>
-            <BsArrowRight className="next-arrow" />
-          </Link>
+          <NextLink link="/contact" description="Are you convinced to contact me now ?" />
         </div>
       </div>
       <div>
