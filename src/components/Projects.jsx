@@ -1,8 +1,5 @@
 import BookshelfApp from '../assets/projects/BookshelfApp.png';
-import TourGuide from '../assets/projects/TourGuide.png';
-import ConverseStore from '../assets/projects/ConverseStore.png';
-import WonderfulIndonesia from '../assets/projects/WonderfulIndonesia.png';
-import LandingPage from '../assets/projects/LandingPage.png';
+import CookIt from '../assets/projects/CookIt.png';
 import { useEffect } from 'react';
 import NextLink from './NextLink';
 
@@ -39,57 +36,15 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div style={{ backgroundImage: `url(${TourGuide})` }} className="card group">
+          <div style={{ backgroundImage: `url(${CookIt})` }} className="card group">
             <div className="card-content opacity-0 group-hover:opacity-100">
-              <span className="card-title">Tour Guide App</span>
-              <span className="card-description">Guide you to travel in the Bromo Tengger Semeru area</span>
+              <span className="card-title">Cook It</span>
+              <span className="card-description">Find the recipe you will cook</span>
               <div className="text-center">
-                <a href="https://alifzaidan.github.io/web-tour-guide/" rel="noreferrer" target="_blank">
+                <a href="https://cookit-recipes.netlify.app/">
                   <button className="card-button">Demo</button>
                 </a>
-                <a href="https://github.com/alifzaidan/web-tour-guide" rel="noreferrer" target="_blank">
-                  <button className="card-button">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${ConverseStore})` }} className="card group">
-            <div className="card-content opacity-0 group-hover:opacity-100">
-              <span className="card-title">Converse Store App</span>
-              <span className="card-description">An E-commerce Application For Buying Converse Products.</span>
-              <div className="text-center">
-                <a href="/">
-                  <button className="card-button">Demo</button>
-                </a>
-                <a href="/">
-                  <button className="card-button">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${WonderfulIndonesia})` }} className="card group">
-            <div className="card-content opacity-0 group-hover:opacity-100">
-              <span className="card-title">Wonderfull Indonesia</span>
-              <span className="card-description">All about the natural beauty of Indonesia</span>
-              <div className="text-center">
-                <a href="/">
-                  <button className="card-button">Demo</button>
-                </a>
-                <a href="/">
-                  <button className="card-button">Code</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div style={{ backgroundImage: `url(${LandingPage})` }} className="card group">
-            <div className="card-content opacity-0 group-hover:opacity-100">
-              <span className="card-title">Contact Landing Page</span>
-              <span className="card-description">Website landing page for contact menu using SASS</span>
-              <div className="text-center">
-                <a href="/">
-                  <button className="card-button">Demo</button>
-                </a>
-                <a href="/">
+                <a href="https://github.com/alifzaidan/cook-it">
                   <button className="card-button">Code</button>
                 </a>
               </div>
