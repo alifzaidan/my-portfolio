@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import NextLink from './NextLink';
 import ResumeImg from '../assets/resume.jpg';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 
 const Resume = () => {
   useEffect(() => {
@@ -10,6 +11,9 @@ const Resume = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>Resume | Muchammad Alif Zaidan</title>
+      </Helmet>
       <div className="wrapper">
         <div className="mb-10">
           <h1 className="title">Resume.</h1>

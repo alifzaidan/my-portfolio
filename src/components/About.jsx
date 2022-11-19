@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { SiTailwindcss } from 'react-icons/si';
 import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact, FaFigma } from 'react-icons/fa';
 import NextLink from './NextLink';
@@ -10,6 +11,9 @@ const About = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>About Me | Muchammad Alif Zaidan</title>
+      </Helmet>
       <div className="wrapper">
         <div className="mb-10">
           <h1 className="title">About Me.</h1>

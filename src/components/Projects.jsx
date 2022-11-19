@@ -1,6 +1,7 @@
 import BookshelfApp from '../assets/projects/BookshelfApp.png';
 import CookIt from '../assets/projects/CookIt.png';
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import NextLink from './NextLink';
 
 const Projects = () => {
@@ -16,6 +17,9 @@ const Projects = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>Project | Muchammad Alif Zaidan</title>
+      </Helmet>
       <div className="wrapper">
         <div className="mb-10">
           <h1 className="title">Projects.</h1>

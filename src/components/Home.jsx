@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import NextLink from './NextLink';
 
 const Home = () => {
   return (
     <main>
+      <Helmet>
+        <title>Portfolio | Muchammad Alif Zaidan</title>
+      </Helmet>
       <div className="mx-6 mt-10 sm:mx-24 md:mx-32 md:mt-16 lg:mx-56 lg:mt-[4.5rem]">
         <div className="mb-10">
           <h1 className="title">I'm Muchammad Alif Zaidan</h1>

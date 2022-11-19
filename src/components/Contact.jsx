@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import NextLink from './NextLink';
 
 const Contact = () => {
@@ -8,6 +9,9 @@ const Contact = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>Contact Us | Muchammad Alif Zaidan</title>
+      </Helmet>
       <div className="wrapper">
         <div className="mb-10">
           <h1 className="title">Contact Me.</h1>
