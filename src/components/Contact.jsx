@@ -23,10 +23,12 @@ const Contact = () => {
           </p>
         </div>
         <form className="mb-10 flex flex-col gap-6" action="https://getform.io/f/e1f9e480-d31b-43b4-834f-3f99f625f49f" method="POST">
-          <input type="text" placeholder="Name" className="input-form" />
+          <input type="text" name="name" placeholder="Name" className="input-form" />
           <input type="email" name="email" id="email" placeholder="Email" className="input-form" />
           <textarea name="message" id="message" placeholder="Message" className="input-form h-48"></textarea>
-          <button className="button-form">Send Message</button>
+          <button type="submit" className="button-form">
+            Send Message
+          </button>
         </form>
         <div className="mb-24 md:mb-0">
           <NextLink link="/" description="Go Back Home" />
