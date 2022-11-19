@@ -39,11 +39,11 @@ const Navbar = () => {
                 Projects
               </NavLink>
             </li>
-            {/* <li >
+            <li>
               <NavLink to="/resume" className="nav-link">
                 Resume
               </NavLink>
-            </li> */}
+            </li>
             <li>
               <NavLink to="/contact" className="nav-link">
                 Contact

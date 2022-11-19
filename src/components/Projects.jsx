@@ -52,7 +52,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="mb-24 md:mb-0">
-          <NextLink link="/contact" description="Are you convinced to contact me now ?" />
+          <NextLink link="/resume" description="Lets Go To My Resume." />
         </div>
       </div>
       <div>
